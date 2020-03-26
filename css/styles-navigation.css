@@ -1,0 +1,259 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+/* --------- */
+header {
+  width: 100vw;
+  display: block;
+
+  /*background-color: rgba(255, 255, 255, 0);*/
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#page {
+  display: flex;
+  flex-wrap: wrap;
+}
+#top {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5cf8e; /* Yellow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#top h1 {
+  font-size: 3rem;
+}
+#top h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #000;
+}
+#top p {
+  font-family: "Lato";
+  font-weight: 100;
+  margin: 20px;
+}
+
+/* --------------------- */
+
+nav {
+  min-height: 4vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  background: transparent;
+}
+
+.logo,
+.menu {
+  z-index: 2;
+  font-family: "Rajdhani-Light";
+  background: transparent;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: "Poppins-medium";
+  letter-spacing: -1px;
+  text-decoration: line-through;
+  color: #333;
+  font-size: 1.8rem;
+  background-color: transparent;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+svg.menu {
+  background: transparent;
+
+  /*background lines */
+}
+
+/*---------navigation--bar-----------------*/
+
+.nav-open {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 1;
+  color: #000;
+  background: #f3f3f3;
+
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+
+  text-align: center;
+  transform: translateY(-100%);
+  /*this is going to take the whole container 
+  of the nav, and push/hide it completely to the top*/
+}
+
+.nav-open h3 {
+  background: #f3f3f3;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "FjordOne";
+  font-weight: 100;
+  color: #000;
+}
+
+.nav-open p {
+  background: #f3f3f3;
+  font-size: 0.8em;
+  color: #000;
+  font-family: "Poppins-light";
+}
+
+/*-------CONTACT-------*/
+
+.contact {
+  width: 50%;
+  background: #f3f3f3;
+}
+
+.contact h3 {
+  margin-top: 35px;
+
+  font-size: 89%;
+  color: #000000;
+  background: #f3f3f3;
+}
+
+.contact ul li {
+  background: #f3f3f3;
+  font-size: 1.3em;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-decoration: line-through;
+  list-style-type: none;
+  text-transform: capitalize;
+  font-family: "Rajdhani-Light";
+  background: #f3f3f3;
+  color: #000;
+}
+
+.contact a {
+  background: #f3f3f3;
+  color: #000;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  background: #f3f3f3;
+  color: #2727e3;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+/*-------END CONTACT-------*/
+
+/*-------SERVICES-------*/
+
+.services {
+  background: #f3f3f3;
+  display: block;
+  width: 30%;
+  color: #000;
+}
+
+.services h3 {
+  background: #f3f3f3;
+  margin-top: 35px;
+
+  font-size: 89%;
+  color: #000;
+}
+
+.services ul li {
+  background: #f3f3f3;
+  font-size: 1.3em;
+  line-height: 25px;
+  letter-spacing: 2px;
+  list-style-type: none;
+  text-transform: capitalize;
+  text-decoration: line-through;
+  font-family: "Rajdhani-Light";
+  color: #000;
+}
+
+.services a {
+  background: #f3f3f3;
+  color: #000;
+  text-decoration: none;
+}
+
+.services a:hover {
+  background: #f3f3f3;
+  color: #2727e3;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+/*-------Collections-------*/
+
+.collections {
+  width: 50%;
+  background: #f3f3f3;
+}
+
+.collections h3 {
+  margin-top: 35px;
+
+  font-size: 89%;
+  color: #000000;
+  background: #f3f3f3;
+}
+
+.collections ul li {
+  background: #f3f3f3;
+  font-size: 1.3em;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-decoration: line-through;
+  list-style-type: none;
+  text-transform: capitalize;
+  font-family: "Rajdhani-Light";
+  background: #f3f3f3;
+  color: #000;
+}
+
+.collections a {
+  background: #f3f3f3;
+  color: #000;
+  text-decoration: none;
+}
+
+.collections a:hover {
+  background: #f3f3f3;
+  color: #2727e3;
+  text-decoration: none;
+  transition: 0.1s;
+}
